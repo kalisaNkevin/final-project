@@ -1,0 +1,612 @@
+<html>
+    <head>
+        <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta author="kevin" content="My blog page">
+        <title>My brand</title>
+        <script src="https://kit.fontawesome.com/ac26e30a51.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+body{
+    font: 1vw,sans-serif,helvetica,arial;
+    margin: 0px;
+    padding: 0px;
+    background: rgba(111, 102, 102, 0.1);
+
+}
+.header{
+    
+      
+      color: #000000;
+      padding-top: 20px;
+      min-height: 70px;
+      height: 100px;
+      width: 100%;
+      background: rgba(72, 70, 70, 0.2);
+      position: fixed;
+  
+  }
+  header a{
+      text-decoration: none;
+      font-size: 2vw;
+      color: #000000;
+      text-transform: uppercase;
+  }
+  header ul{
+      margin: 0;
+      padding: 0;
+  }
+  header li{
+      float: left;
+      display:inline;
+      padding: 0 10px 0 10px;
+  }
+  header nav{
+      float: right;
+      margin-top: 10px;
+  }
+  header a:hover{
+      color:#cccccc;
+      font-weight: bold;
+  }
+  header img{
+      height: 350px;
+      width: 350px;
+      border-radius:50%;
+      float: right ;
+      padding-top: 30px;
+  }
+  .text{
+     padding-top: 250px;
+     font-size: 1vw;
+ }
+ 
+ .fa:hover {
+     opacity: 0.7;
+ }
+ 
+ .fa-facebook {
+   color: black;
+ }
+ 
+ .fa-twitter {
+   color: black;
+ }
+ 
+ .fa-google {
+   color: black;
+ }
+ 
+ .fa-linkedin {
+   color: black;
+ }
+ .fa-instagram {
+   color: black;
+ }  
+
+  
+  .dude h3,h1{
+    text-align: center;
+    padding-top: 20px;
+  }
+  .dude h3{
+      font-size: 24px;
+      font-family: 'Roboto Slab';
+      font-style: normal;
+      font-weight: 600;
+      line-height: 26px;
+      color: #3269F8;
+
+  }
+  .dude h1{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+    color: #291A67;
+
+  }
+  .dude_left{
+       float: left;
+       margin-left: 130px;
+       
+  }
+  .dude_left textarea{
+      width: 660px;
+      background-color: #E5E5E5;
+  }
+  .dude_left input{
+    background-color: #E5E5E5;
+  }
+  .dude_right{
+      float: right;
+      margin-right: 400px;
+      font-family: 'Roboto Slab';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+
+  }
+  .dude_left #subject{
+    padding-top: 20px;
+  }
+  .fafa-envelope {
+      margin-right: 600px;
+      color: #3269F8;
+  }
+  button{
+  background-color: #3269F8;
+  width: 110px;
+  border-radius: 25px;
+  color: white;
+  height: 40px;
+  margin-bottom: 100px;
+    
+    }
+    input[type=text] {
+      
+      width: 60%;
+      padding: 15px;
+      display: inline-block;
+      border: none;
+      color: rgba(0, 0, 0, 0.5);
+      background:  rgba(196, 196, 196, 0.7);
+    }
+    
+    input[type=text]:focus {
+        color: rgba(0, 0, 0, 0.5);
+      background-color:  rgba(196, 196, 196, 0.7);
+      outline: none;
+    }
+    .dude{
+      margin-bottom: 160px;
+    }
+    .dude .dude_right .fas{
+      min-width: 16px;
+    }
+    .card{
+      display: flex;
+      padding-bottom: 100px;
+   
+    }
+    .card-text{
+      padding: 0 10px;
+    }
+    .card-text p{
+      font-size: 22px;
+      margin: 0px;
+      padding: 0px;
+      margin-left: 5px;
+    }
+    .fa-phone {
+    color: #3269F8;
+  }
+  .fa-envelope {
+    color: #3269F8;
+  }
+  .fa-location-dot {
+    color: #3269F8;
+  }
+  .introduction img{
+ border-radius:50%;
+ height: 500px;
+ float: right;
+ margin-right: 50px;
+ margin-top: 200px;
+}
+
+.introduction {
+ display: flex;
+ margin-bottom: 200px;
+}
+.introductions{
+ float: left;
+ margin-top: 200px;
+ font-size: 20px;
+}
+.right {
+ left: 50% ;
+ font-size: 24px;  
+}
+.left{
+ left:0;
+ margin-left: 50px;
+ margin-top: 20px;
+}
+.column img{
+  width: 500px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.column{
+ margin-left: 40px;
+
+}
+.container {
+ width: 80%; 
+ background-color: #ddd;
+}
+.skills {
+ text-align: right; 
+ padding-top: 10px; 
+ padding-bottom: 10px;
+ color: white; 
+}
+
+.html {width: 85%; background-color: #3269F8;} 
+.css {width: 80%; background-color:#3269F8 ;} 
+.js {width: 70%; background-color: #3269F8;} 
+.php {width: 65%; background-color: #3269F8;} 
+.nodejs {width: 85%; background-color: #3269F8;} 
+.react {width: 80%; background-color:#3269F8 ;} 
+.cplus {width: 70%; background-color: #3269F8;} 
+.c {width: 65%; background-color: #3269F8;} 
+
+.colum {
+ float: left;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ transition: 0.3s;
+ width: 400px;
+ margin-left: 120px;
+ font-size: 22px;
+}
+.colum p{
+ color: rgba(41, 26, 103, 1);
+}
+.colum img{
+  width: 400px;
+}
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+.colum:hover {
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.contain {
+ float: left;
+ padding: 2px 2px;
+ margin-right: 5px;
+}
+.column{
+  float: left;
+ margin-left: 20px;
+ margin-right: 15px;
+
+}
+.columns{
+  float: left;
+  width: 600px;
+  margin-top: 10px;
+}
+.raw{
+  margin-left: 250px;
+}
+.raw:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.abouts{
+  float: left;
+  width: 50%;
+  padding-top: 50px;
+  height: 600px;  
+  font-size: 24px;
+}
+.abouts img{
+  margin-left: 150px;
+}
+.abouts p{
+  margin-right: 100px;
+}
+.abouts h1{
+    margin-right: 110px;
+}
+.introductions section{
+  margin-top: 300px;
+  margin-left: 150px;
+  font-size: 20px;
+}
+.social{
+  position: fixed;
+  margin-left: 100px;
+}
+
+.blocker h4{
+   font-weight: 300;
+   color: #777
+}
+
+.blocker span {
+   font-weight: 600;
+}
+
+.blocker {
+  font-size: 24px;
+   width: 80%;
+   padding: 50px 0;
+   margin: 50px auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.blocker:before {
+   content: '';
+   position: absolute;
+   top: none;
+   left: 50%;
+   margin-left: -1px;
+   width: 2px;
+   height: 100%;
+   background: #CCD1D9;
+   z-index: 1
+}
+
+.timeline-block {
+   width: -webkit-calc(50% + 8px);
+   width: -moz-calc(50% + 8px);
+   width: calc(50% + 8px);
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: flex;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -moz-box-pack: justify;
+   justify-content: space-between;
+   clear: both;
+}
+
+.timeline-block-right {
+   float: right;
+}
+
+.timeline-block-left {
+   float: left;
+   direction: rtl
+}
+
+.marker {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid #F5F7FA;
+   background: #3269F8;
+   margin-top: 10px;
+   z-index: 9999
+}
+
+.timeline-content {
+   width: 95%;
+   padding: 0 15px;
+   color: #666
+
+}
+
+.timeline-content h4 {
+   margin-top: 0px;
+   margin-bottom: 5px;
+   font-size: 25px;
+   font-weight: 500
+}
+
+.timeline-content span {
+   font-size: 15px;
+   color: #a4a4a4;
+}
+
+.timeline-content p {
+   font-size: 16px;
+   line-height: 1.5em;
+   word-spacing: 1px;
+   color: #888;
+}
+
+
+@media screen and (max-width: 768px) {
+   .container:before {
+      left: 8px;
+      width: 2px;
+   }
+   .timeline-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .timeline-block-right {
+      float: none;
+   }
+
+   .timeline-block-left {
+      float: none;
+      direction: ltr;
+   }
+}
+
+
+    </style>
+
+    <body>
+      <div class="header">
+        <header>    
+          <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#blogs">Blog</a></li>
+                  <li><a href="#contacts">Contacts</a></li>
+                  <li><a href="login.html">Login</a></li>
+                  
+              </ul>
+          </nav>
+       </header>   
+      </div>
+      <div class="dude"> 
+        <div class="introductions">
+          <div class="social">
+            <p><a href="https://www.linkedin.com/in/kalisa-ngabo-kevin-6717781b7" class="fa fa-linkedin"></a></p>
+            <p><a href="https://twitter.com/Kalisakevin_?t=72nIspf0RwysGAnB-nwgHQ&s=09" class="fa fa-twitter"></a></p>
+            <p><a href="https://m.facebook.com/login.php?next=https%3A%2F%2Fm.facebook.com%2Fhome.php&refsrc=deprecated&_rdr" class="fa fa-facebook"></a></p>
+            <p><a href="https://www.instagram.com" class="fa fa-instagram"></a></p>
+          </div>
+            
+           <section>
+            <h4>Hi, I am</h4>
+            <p>Kalisa Ngabo Kevin</p>
+            <p>A junior Software engineer</p>
+            <p>Coding is my passion i enjoy photograph and during my free time as well as travelling exploring new places</p>
+          
+           </section>   
+        </div>
+          
+<div class="introduction">
+  <img src="profile.jpeg" alt="avatar">
+  </div>
+  </div> 
+      <div class="dude">
+        <div id="about" class="abouts">
+          <img src="profile.jpeg" alt="avatar" width="500px" height="500px">
+        </div>
+          <div class="abouts">
+            <h1 >About Me</h1>
+            <p>I am young  junior developer based in Rwanda, with 2 years of experience in the tech field. I was priveledged to meet various senior developers that helped to interconnect with other software engineers globally. I am able to give out my services to any client in need. </p>
+         </div>
+        </div>      
+      <div class="dude">
+        <h3> why choose me </h3>
+        <h1> My Expertise Area </h1>
+        <div class="raw">
+          <div class="columns">
+            <p>HTML</p>
+              <div class="container">
+               <div class="skills html">85%</div>
+             </div>
+            <p>CSS</p>
+             <div class="container">
+               <div class="skills css">80%</div>
+             </div>
+             
+            <p>JAVASCRIPT</p>
+             <div class="container">
+               <div class="skills js">70%</div>
+             </div>
+             
+            <p>PHP</p>
+             <div class="container">
+               <div class="skills php">65%</div>
+             </div>  
+         </div>
+         <div class="columns">
+            <p>NODE JS</p>
+            <div class="container">
+             <div class="skills html">80%</div>
+           </div>
+            <p>REACT</p>
+            <div class="container">
+             <div class="skills css">75%</div>
+            </div>
+            <p>C++</p>
+            <div class="container">
+             <div class="skills js">70%</div>
+            </div>
+            <p>C</p>
+             <div class="container">
+             <div class="skills php">65%</div>
+          </div>  
+        </div> 
+      </div>  
+      <div class="dude">
+        <h3> My qualifications </h3>
+        <h1> Awesome Journey </h1>
+        <div class="blocker">
+
+          <div class="timeline-block timeline-block-right">
+             <div class="marker"></div>
+             <div class="timeline-content">
+                <h4>University of Rwanda</h4>
+                <span>Civil Engineering</span>
+                <p> 2021-2024</p>
+             </div>
+          </div>
+       
+          <div class="timeline-block timeline-block-right">
+             <div class="marker"></div>
+             <div class="timeline-content">
+                <h4>Sonrise School</h4>
+                <span>MPC</span>
+                <p>2014-2019</p>
+             </div>
+          </div>
+       </div>
+      <div class="dude">
+        <h3 id="projects"> My portfolio </h3>
+        <h1> My Recent Work </h1>
+        <div class="column projects-list">
+
+      </div> 
+      <div class="dude">
+        <h3 > Blogs </h3>
+        <h1 id="blogs"> Latest Updates </h1>
+        <div class="row blogs-list">
+          
+          
+        </div>
+        
+      </div> 
+      <div class="dude">
+      <h3 id="contacts"> Contact Me </h3>
+      <h1> Get In Touch </h1>
+  <div class="dude_right">  
+    <div class="card">
+     <i class="fas fa-phone"> </i> 
+     <div class="card-text">
+
+       <p> <b>Call Me:</b></p>
+       <p><b>+250786738464</b></p>
+       <p><b>+250736738464</b></p>
+     </div>
+  </div>
+  <div class="card">
+       <i class="fas fa-envelope"> </i> 
+       <div class="card-text">
+
+         <p><b>Email:</b></p>
+         <p><b>kevinkalisa84@gmail.com</b></p>
+       </div>
+     </div> 
+     <div class="card">
+        <i class="fas fa-location-dot"> </i>
+        <div class="card-text">
+
+          <p><b>Location:</b></p> 
+          <p><b>Rwanda, Kigali - Kicukiro</b></p>
+          <p><b>Street: KK4AVE </b></p>
+         </div>
+       </div>
+   </div>
+      <div class="dude_left">
+        <form id="form">
+          <p><input id="inputFullNames" type="text"  name="fullName" placeholder="Your names" style="width:300px">
+            <input id="inputEmail" type="text" name="email" placeholder="Email" style="width:300px"></p><br><div>
+            <p><input id="inputSubject" type="text" name="subject" placeholder="subject" style="width:630px" ></p> <br>
+            <p><textarea id="inputText" name="text" placeholder="Write something.." style= "height:200px"></textarea></p>
+            <button type="submit" class="button ">Send Message</button>
+        </form>
+         
+      </div>
+    </div>
+    </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../Js/globalVar.js"></script>
+    <script src="../Js/blog.js"></script>
+    <script src="../Js/project.js"></script>
+    <script src="../Js/contact.js"></script>
+</html>
+
+   
+ 

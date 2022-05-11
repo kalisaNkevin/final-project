@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="kevin" content="Login page">
+        <title>My brand</title>
+        <script src="https://kit.fontawesome.com/ac26e30a51.js" crossorigin="anonymous"></script>
+    </head>
+        <style>
+        body {
+            background-image: url('login.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            width: 100%;
+             }
+  header{
+    position: fixed; 
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 99px;
+    left: 0px;
+    top: 0px;
+    background: rgba(132, 122, 122, 0.7);
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;  
+    display: block;
+  }
+  header a{
+      text-decoration: none;
+      font-size: 2vw;
+      color: #000000;
+      text-transform: uppercase;
+  }
+  header ul{
+      margin: 0;
+      padding: 0;
+  }
+  header li{
+      float: left;
+      display:inline;
+      padding: 0 10px 0 10px;
+  }
+  header nav{
+      float: right;
+      margin-top: 10px;
+  }
+  header a:hover{
+      color:#cccccc;
+      font-weight: bold;
+  }
+  h1{
+    margin-top: 300px;
+    color: white;
+    padding-left: 800px;
+    position: absolute;
+
+}
+.container-left{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 47px;
+  float: left;
+  margin-top: 400px;
+  margin-left: 800px;
+}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+      
+  width: 70%;
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+  background:  rgba(196, 196, 196, 0.7);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    color: rgba(0, 0, 0, 0.5);
+  background-color:  rgba(196, 196, 196, 0.7);
+  outline: none;
+}
+
+.button {
+  background-color: rgba(196, 196, 196, 0.7);
+  border: none;
+  color: rgba(0, 0, 0, 0.5);;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block ;
+  width: 80%;
+
+}
+
+.button1 {border-radius: 25px;}
+.container-left .acc p h5{
+    color: white;
+    text-align: center;
+
+}
+a{
+    color: white;
+}
+
+
+        </style>
+    <body>  
+        <header>
+            <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            </div>    
+        </header>
+        <h1>MEMBER    SIGN IN</h1>
+        <div class="container-left">
+            
+            <form id="form">
+                <input id="inputMail" type="text" placeholder="Enter Email" name="email" required>  <br>
+                <input id="inputPassword" type="password" placeholder="Enter Password" name="psw" required>
+                <button id="btnInsert" type="submit" class="button button1">Login</button>
+            </form>
+                <div class="acc" >
+                    <p><a href="signup.html"><b>Create an Account</b></p><h5>Forgot password</h5>    
+                </div>
+        </div>
+        <script>
+            /* const inputMail = document.getElementById("inputMail");
+                const inputPassword = document.getElementById("inputPassword");
+                const btnInsert = document.getElementById("btnInsert");
+                btnInsert.onclick = function(e){
+                  e.preventDefault();
+                     const email =inputMail.value;
+                     const psw =inputPassword.value;
+                     console.log(email);
+                     console.log(psw);
+                 }; */
+        </script>
+           <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+           <script src="../Js/login.js"></script>
+    </body>
+</html>
