@@ -271,21 +271,22 @@ th,td{
                     </div>
                 </div> 
             </div>
-            <div class="content">
+            <div class="content" >
               
                 <div class="content-2">
                 <div class="recent-payments"> 
                     <div class="title">
-                        <h2>Recent Messages</h2>
-                        <a href="#" class="btn">Create Message</a>
+                       
+                        <h2><a style="text-align: center;">Recent Message </a></h2>
                     </div>
-                    <table>
-                      <tr>
+                    <table style="width:90%" >
+                      <tr style="justify-content: space-between; display: flex; width: 100%; text-align:right;">
                       <div class="table_row row_header">
                       <th><div class="table_column">Names</div></th>
                       <th><div class="table_column">Email</div></th>
                       <th><div class="table_column">Subject</div></th>
                       <th><div class="table_column">Text</div></th>  
+                      <th><div class="table_column">Delete</div></th>  
                     </div>
                       </tr>
                     </table>
@@ -298,5 +299,7 @@ th,td{
         </div>
         
     </body>
-    <script src="../Js/dasboardMessage.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./Js/globalVar.js"></script>
+    <script src="./Js/dasboardMessage.js"></script>
     </html>

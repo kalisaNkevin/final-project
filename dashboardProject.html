@@ -207,6 +207,7 @@ th,td{
 @media screen and (max-width:940px){
   .side-menu li span{
     display: none;
+    color: rgb(250, 247, 247);
   }
   .side-menu{
     align-items: center;
@@ -216,7 +217,7 @@ th,td{
     height: 40px;
   }
   .side-menu li:hover{
-    background: #f05462;
+    background: #f6f6f7;
     padding: 8px;
     border: 2px solid white;
   }
@@ -278,8 +279,6 @@ th,td{
       background-color:  rgba(196, 196, 196, 0.7);
       outline: none;
     }
-   
-
       
 
 
@@ -293,13 +292,13 @@ th,td{
                 <h1>Admin</h1>
             </div>
             <ul>
-                <li><img src="dashboard (2).png" height="50px" width="50px" alt="">&nbsp;<span><a href=dashboard.html> Dashboard</span></li>
-                <li><img src="diagram.png" height="50px" width="50px" alt="">&nbsp;<span> Project</span> </li>
-                <li><img src="letter.png" height="50px" width="50px" alt="">&nbsp;<span><a href="dashboardArticle.html"> Articles</span> </li>
+                <li><img src="dashboard (2).png" height="50px" width="50px" alt="">&nbsp;<span><a href="dashboard.html"  Dashboard</span></li>
+                <li><img src="diagram.png" height="50px" width="50px" alt="">&nbsp;<span> <a href="dashboardProject.html">Project</span> </li>
+                <li><img src="letter.png" height="50px" width="50px" alt="">&nbsp;<span>Articles</span> </li>
                 <li><img src="comment.png" height="50px" width="50px" alt="">&nbsp; <span> <a href="dashboardComment.html">Comments</span> </li>
                 <li><img src="like.png" height="50px" width="50px" alt="">&nbsp;<span> <a href="dashboardLikes.html">Likes</span>  </li>
-                <li><img src="email copy.png" height="50px" width="50px" alt="">&nbsp;<span><a href="dashboardMessages.html"> Messages</a></span>  </li>
-                <li><img src="logout.png" height="50px" width="50px" alt="">&nbsp;<span> <a href="">Log out</span>  </li>
+                <li><img src="email copy.png" height="50px" width="50px" alt="">&nbsp;<span><a href="dashboardMessages.html">Messages</a></span>  </li>
+                <li><img src="logout.png" height="50px" width="50px" alt="">&nbsp;<span> <a href="login.html">Log out</span>  </li>
             </ul>
         </div>
         <div class="container">
@@ -317,42 +316,39 @@ th,td{
                 </div> 
             </div>
             <div class="content">
-              
                 <div class="content-2">
                 <div class="recent-payments"> 
                     <div class="title">
-                        <h2>Recent Projects</h2>
-                        <a href="#" class="btn">Create a Project</a>
-                        <a href="#" class="btn">Update a Project</a>
-                        <a href="#" class="btn">Delete a Project</a>
+                        <h2>Recent Articles</h2>
+                        <a href="#" class="btn" onclick="document.getElementsByid(id01)">Create an Article</a>
                     </div>
-                    
-                  <div class="dude_left">
-                    <div class="login-btn">
-                      <a href="#" class="button" data-toggle="modal" data-target="#login-modal">Create blog</a>
-                      </div>
-                      
-                      <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                              <div class="modal-dialog">
-                              <div class="loginmodal-container">
-                                <form>
-                                <input type="text" name="user" placeholder="title">
-                                   <p><textarea id="inputBody" name="text" placeholder="Write something on the body.." style= "height:100px"></textarea>
-                                <input type="password" name="pass" placeholder="Date of the article">
-                                <input type="submit" name="login" class="login loginmodal-submit" value="Create an article">
-                                </form>
-                                
-                      
-                              </div>
-                            </div>
-                            </div>
+                  <div id="id01" class="dude_left">
+                    <form id="form-message">
+                      <p><input id="inputTitle" type="text"  name="fullName" placeholder="title of the Project" style="width:300px">
+                        <p><textarea id="inputBody" name="text" placeholder="Write something on the body.." style= "height:200px"></textarea>
+                        <p><input id="inputDate" type="date"  name="fullName" placeholder="date of the Project" style="width:300px"></p>
+                        <button type="submit" class="button ">Create Article</button>
+
+                    </form>
                   </div>
+                  <table style="width:90%" >
+                    <tr style="justify-content: space-between; display: flex; width: 100%; text-align:right;">
+                    <div class="table_row row_header">
+                    <th><div class="table_column">Title</div></th>
+                    <th><div class="table_column">Body</div></th>
+                    <th><div class="table_column">Date</div></th>
+                    <th><div class="table_column">Modify</div></th>  
+                    <th><div class="table_column">Delete</div></th>  
+                  </div>
+                    </tr>
+                  </table>
+              
+
             </div>
-            
         </div>
         
     </body>
-
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../Js/dashboardProject.js"></script>
+    <script src="./Js/globalVar.js"></script>
+    <script src="./Js/dashboardProject.js"></script>
     </html>

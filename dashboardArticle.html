@@ -326,12 +326,23 @@ th,td{
                     <form id="form-message">
                       <p><input id="inputTitle" type="text"  name="fullName" placeholder="title of the article" style="width:300px">
                         <p><textarea id="inputBody" name="text" placeholder="Write something on the body.." style= "height:200px"></textarea>
-                        <p><input id="inputDate" type="text"  name="fullName" placeholder="date of the article" style="width:300px"></p>
+                        <p><input id="inputDate" type="date"  name="fullName" placeholder="date of the article" style="width:300px"></p>
                         <button type="submit" class="button ">Create Article</button>
-                        <button type="submit" class="button ">Create delete</button>
-                        <button type="submit" class="button ">Create update</button>
+
                     </form>
                   </div>
+                  <table style="width:90%" >
+                    <tr style="justify-content: space-between; display: flex; width: 100%; text-align:right;">
+                    <div class="table_row row_header">
+                    <th><div class="table_column">Title</div></th>
+                    <th><div class="table_column">body</div></th>
+                    <th><div class="table_column">Date</div></th>
+                    <th><div class="table_column">modify</div></th>  
+                    <th><div class="table_column">Delete</div></th>  
+                  </div>
+                    </tr>
+                  </table>
+                  
                       
               
 
@@ -340,5 +351,6 @@ th,td{
         
     </body>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../Js/dashboardProject.js"></script>
+    <script src="./Js/globalVar.js"></script>
+    <script src="./Js/dashboardArticle.js"></script>
     </html>

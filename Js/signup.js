@@ -32,7 +32,7 @@ contactform.addEventListener('submit', async (e) => {
 
         return location.assign('./dashboard.html');
       }
-      location.assign('./index.html');
+      location.assign('./login.html');
     }, 3000);
   } catch (error) {
     console.log(error);
