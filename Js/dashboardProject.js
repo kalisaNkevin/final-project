@@ -44,6 +44,7 @@ fetch("https://kalisakevin.herokuapp.com/api/v1/projects")
             <td><div class="table_column">${project.title}</div></td>
             <td><div class="table_column">${project.body}</div></td>
             <td><div class="table_column">${project.date}</div></td>
+            <td><button class="table_column" onClick="updateProject('${project._id}')" >Update Project</button></td>
             <td><button class="table_column" onClick="deleteProject('${project._id}')" >Delete Project</button></td>
             
             </div>
@@ -71,4 +72,18 @@ fetch("https://kalisakevin.herokuapp.com/api/v1/projects")
         }
     }
 
-
+    async function updateArticle(id) {
+      alert('Deleting blog...');
+      try {
+          await axios
+              .patch(`${global}/api/v1/blogs/${id}`);
+          location.reload()
+      } catch (error) {
+        
+          if (error.response.data?.message) {
+              alert(`${error.response.data.message}`);
+          } else {
+              alert(`${error.message}`);
+          }
+      }
+  }
