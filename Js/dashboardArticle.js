@@ -34,14 +34,14 @@ fetch("https://kalisakevin.herokuapp.com/api/v1/projects")
     .then(data => data.json())
     .then(res => {
         console.log(res)
-        res.projects.map(blog => {
+        res.data.projects.map(blog => {
             ArticleArea.innerHTML += `
             <table style="width:100%">
-            <tr style="justify-content: space-between; display: flex; width: 95%; text-align:right;">
+            <tr style="justify-content: space-between; display: flex; width: 100%; text-align:right;">
             <div class="table_row row_header">
-            <td><div class="table_column">${blog.title}</div></td>
-            <td><div class="table_column">${blog.body}</div></td>
-            <td><div class="table_column">${blog.date}</div></td>
+            <td><div class="table_column">${blog.title?.slice(0,100)}..</div></td>
+            <td><div class="table_column">${blog.body?.slice(0,100)}..</div></td>
+            <td><div class="table_column">${blog.date?.slice(0,100)}..</div></td>
             <td><button class="table_column" onClick="updateBlog('${blog._id}')" >Delete Blog</button></td>
             <td><button class="table_column" onClick="deleteBlog('${blog._id}')" >Delete Blog</button></td>
             
