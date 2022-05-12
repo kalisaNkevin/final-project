@@ -1,4 +1,5 @@
 const MessagesArea = document.querySelector(".message-list");
+const global= window.location.origin.includes("herokuapp") ? window.location.origin : "http://localhost:3000";
 fetch("https://kalisakevin.herokuapp.com/api/v1/messages")
     .then(data => data.json())
     .then(res => {
@@ -12,7 +13,7 @@ fetch("https://kalisakevin.herokuapp.com/api/v1/messages")
             <td><div class="table_column">${message.email}</div></td>
             <td><div class="table_column">${message.subject}</div></td>
             <td><div class="table_column">${message.text}</div></td>
-            <td><div class="table_column"><a href="#" class="btn">Delete Message</a></div></td>
+            <td><button class="table_column" onClick="deleteMessage('${message._id}')" >Delete Message</button></td>
             
             </div>
            
@@ -21,3 +22,20 @@ fetch("https://kalisakevin.herokuapp.com/api/v1/messages")
         });
     }
     );
+
+
+    async function deleteMessage(id) {
+        alert('Deleting Message...');
+        try {
+            await axios
+                .delete(`${global}/api/v1/messages/${id}`);
+            location.reload()
+        } catch (error) {
+          
+            if (error.response.data?.message) {
+                alert(`${error.response.data.message}`);
+            } else {
+                alert(`${error.message}`);
+            }
+        }
+    }
